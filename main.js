@@ -98,7 +98,7 @@ eneImg.addEventListener("mouseup", () => {
         eneSt[4].textContent = "倒した回数:" + eneKill[eneLv - 1];
       }
       //レベルアップの処理
-      if (plyExpNext < 0) {
+      if (plyExpNext <= 0) {
         plyExpNext = plyExpNeed[plyLv];
         plyLv++;
         plySt[1].textContent = "レベル:" + plyLv;
